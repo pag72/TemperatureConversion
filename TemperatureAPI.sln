@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1703.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI", "TemperatureAPI\TemperatureAPI.csproj", "{7CF1A657-9267-4128-92DD-F629778160C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI.Shared", "TemperatureAPIShared\TemperatureAPI.Shared.csproj", "{E35EE83C-46EA-4EEB-82F8-A062993CA14A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI.Demo", "TemperatureAPI.Demo\TemperatureAPI.Demo.csproj", "{981C2334-EB8F-4027-8CA3-A9F296EDAF71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7CF1A657-9267-4128-92DD-F629778160C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF1A657-9267-4128-92DD-F629778160C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF1A657-9267-4128-92DD-F629778160C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35EE83C-46EA-4EEB-82F8-A062993CA14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35EE83C-46EA-4EEB-82F8-A062993CA14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35EE83C-46EA-4EEB-82F8-A062993CA14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35EE83C-46EA-4EEB-82F8-A062993CA14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

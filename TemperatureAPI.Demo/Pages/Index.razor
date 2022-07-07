@@ -1,0 +1,81 @@
+﻿@page "/"
+@using TemperatureAPI.Shared.Models
+
+<h1>Temperature Conversion</h1>
+<p>
+    <label>
+        Value:
+        <input type="number" @bind-value="temperature" />
+    </label>
+</p>
+<p>
+    <label>
+        Scale:
+        <select @onchange="OnSelect">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+    </label>
+</p>
+<p>
+    <button @onclick="CalculateTemperatures">Calculate</button>
+</p>
+@if (temperatureConversion != null)
+{
+    <p>@temperatureConversion.Celsius Celsius</p>
+    <p>@temperatureConversion.Kelvin Kelvin</p>
+    <p>@temperatureConversion.Fahrenheit Fahrenheit</p>
+}
+else
+{
+    <p>@message</p>
+}
+
+@code
+{
+    private TemperatureConversion? temperatureConversion;
+
+    private double? temperature;
+    private string message = "";
+    private string selectedScale = "celsius";
+
+    private void OnSelect(ChangeEventArgs e)
+    {
+        selectedScale = e?.Value?.ToString() ?? selectedScale;
+    }
+
+    private async Task CalculateTemperatures()
+    {
+
+        using (var http = new HttpClient())
+        {
+            string url = $"https://localhost:7067/convertfrom/{selectedScale}/{temperature}";
+            HttpResponseMessage result = await http.GetAsync(url);
+
+            if (result.IsSuccessStatusCode)
+            {
+                temperatureConversion = await result.Content.ReadFromJsonAsync<TemperatureConversion>();
+                if (temperatureConversion != null)
+                {
+                    await SaveTemperatures(temperatureConversion);
+                }
+            }
+            else
+            {
+                temperatureConversion = null;
+                message = await result.Content.ReadAsStringAsync();
+            }
+        }
+    }
+
+    private async Task SaveTemperatures(TemperatureConversion conversion)
+    {
+
+        using (var http = new HttpClient())
+        {
+            string url = $"https://localhost:7067/savetemperatureconversion";
+            HttpResponseMessage result = await http.PostAsJsonAsync<TemperatureConversion>(url, conversion);
+        }
+    }
+}
