@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI", "TemperatureAPI\TemperatureAPI.csproj", "{7CF1A657-9267-4128-92DD-F629778160C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CF1A657-9267-4128-92DD-F629778160C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF1A657-9267-4128-92DD-F629778160C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF1A657-9267-4128-92DD-F629778160C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF1A657-9267-4128-92DD-F629778160C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11B2F67A-8F8B-424A-BC10-1750716D9FDF}
+	EndGlobalSection
+EndGlobal
