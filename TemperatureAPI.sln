@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI.Shared", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI.Demo", "TemperatureAPI.Demo\TemperatureAPI.Demo.csproj", "{981C2334-EB8F-4027-8CA3-A9F296EDAF71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAPI.UnitTest", "TemperatureAPI.UnitTest\TemperatureAPI.UnitTest.csproj", "{D2A7B999-4EFB-4578-8993-E077A9F24CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{981C2334-EB8F-4027-8CA3-A9F296EDAF71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A7B999-4EFB-4578-8993-E077A9F24CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A7B999-4EFB-4578-8993-E077A9F24CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A7B999-4EFB-4578-8993-E077A9F24CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A7B999-4EFB-4578-8993-E077A9F24CC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

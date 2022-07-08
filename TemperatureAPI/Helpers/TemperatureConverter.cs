@@ -37,7 +37,7 @@ namespace TemperatureAPI.Helpers
             {
                 throw new ArgumentOutOfRangeException($"The value of Fahrenheit cannot be less than -459.67");
             }
-            return (temperature - 32) * 5 / 9 + 273.15;
+            return (temperature - 32) * 5 / 9;
         }
 
         public static TemperatureConversion ConvertTemperature(string scale, double temperature)
